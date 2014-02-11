@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\WritersWorkBench.sln" total="11" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2014-02-11" time="12:08:24">
+  <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.5472" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.3\bin" machine-name="WWESTLAKE-HP" user="wwestlake" user-domain="wwestlake-HP" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Test Project" name="C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\WritersWorkBench.sln" executed="True" result="Success" success="True" time="0.510" asserts="0">
+    <results>
+      <test-suite type="Assembly" name="C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\Model\bin\Debug\LagDaemon.WWB.Model.dll" executed="True" result="Success" success="True" time="0.150" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="LagDaemon" executed="True" result="Success" success="True" time="0.133" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="WWB" executed="True" result="Success" success="True" time="0.132" asserts="0">
+                <results>
+                  <test-suite type="Namespace" name="Model" executed="True" result="Success" success="True" time="0.130" asserts="0">
+                    <results>
+                      <test-suite type="Namespace" name="UnitTests" executed="True" result="Success" success="True" time="0.130" asserts="0">
+                        <results>
+                          <test-suite type="TestFixture" name="OutlineTests" executed="True" result="Success" success="True" time="0.070" asserts="0">
+                            <results>
+                              <test-case name="LagDaemon.WWB.Model.UnitTests.OutlineTests.Outline_Produces_Dot_Notation_Entry_Numbers_Based_On_Parents" executed="True" result="Success" success="True" time="0.026" asserts="10" />
+                              <test-case name="LagDaemon.WWB.Model.UnitTests.OutlineTests.OutlineEntry_produces_ordered_children" executed="True" result="Success" success="True" time="0.024" asserts="20" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="StoryStructureTests" executed="True" result="Success" success="True" time="0.039" asserts="0">
+                            <results>
+                              <test-case name="LagDaemon.WWB.Model.UnitTests.StoryStructureTests.StoryStructure_adds_story_structure_elements" executed="True" result="Success" success="True" time="0.013" asserts="1" />
+                              <test-case name="LagDaemon.WWB.Model.UnitTests.StoryStructureTests.StoryStructure_clears_story_elements" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                              <test-case name="LagDaemon.WWB.Model.UnitTests.StoryStructureTests.StoryStructure_removes_story_elements" executed="True" result="Success" success="True" time="0.004" asserts="1" />
+                              <test-case name="LagDaemon.WWB.Model.UnitTests.StoryStructureTests.StoryStructureElement_adds_children" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="LagDaemon.WWB.Model.UnitTests.StoryStructureTests.StoryStructureElement_clears_children" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                              <test-case name="LagDaemon.WWB.Model.UnitTests.StoryStructureTests.StoryStructureElement_removes_children" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="TimeLineTests" executed="True" result="Success" success="True" time="0.011" asserts="0">
+                            <results>
+                              <test-case name="LagDaemon.WWB.Model.UnitTests.TimeLineTests.TimeLine_Adds_Entries" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                              <test-case name="LagDaemon.WWB.Model.UnitTests.TimeLineTests.TimeLine_Clears_Entries" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                              <test-case name="LagDaemon.WWB.Model.UnitTests.TimeLineTests.TimeLine_Removess_Entries" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

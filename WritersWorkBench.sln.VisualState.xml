@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="true">
+  <TopNode>[0-1000]C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\WritersWorkBench.sln</TopNode>
+  <SelectedNode>[0-1000]C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\WritersWorkBench.sln</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1000]C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\WritersWorkBench.sln" Expanded="true" />
+    <Node UniqueName="[1-1002]C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\Model\bin\Debug\LagDaemon.WWB.Model.dll" Expanded="true" />
+    <Node UniqueName="[1-1003]LagDaemon" Expanded="true" />
+    <Node UniqueName="[1-1004]LagDaemon.WWB" Expanded="true" />
+    <Node UniqueName="[1-1005]LagDaemon.WWB.Model" Expanded="true" />
+    <Node UniqueName="[1-1000]LagDaemon.WWB.Model.ModelTests" Expanded="true" />
+  </Nodes>
+</VisualState>
