@@ -16,7 +16,7 @@ namespace LagDaemon.WWB.Model
             elements = new List<T>();
         }
 
-        internal void AddChild(T element)
+        public void AddChild(T element)
         {
             elements.Add(element);
             element.parent = this as T;
@@ -117,12 +117,12 @@ namespace LagDaemon.WWB.Model
         }
 
 
-        internal void Remove(T element)
+        public void Remove(T element)
         {
             elements.Remove(element);
         }
 
-        internal void Clear()
+        public void Clear()
         {
             elements.Clear();
         }

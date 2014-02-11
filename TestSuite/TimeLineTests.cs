@@ -1,11 +1,12 @@
-﻿using NUnit.Framework;
+﻿using LagDaemon.WWB.Model;
+using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LagDaemon.WWB.Model.UnitTests
+namespace LagDaemon.WWB.TestSuite
 {
     [TestFixture]
     public class TimeLineTests
