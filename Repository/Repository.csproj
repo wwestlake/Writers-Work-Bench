@@ -41,6 +41,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IRepository.cs" />
+    <Compile Include="RepositoryException.cs" />
+    <Compile Include="RepositoryFactory.cs" />
+    <Compile Include="Zip\ZipRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Model\Model.csproj">
