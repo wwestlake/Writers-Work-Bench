@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Repository")]
+[assembly: AssemblyTitle("RepositoryTestSuite")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("LagDaemon Software")]
-[assembly: AssemblyProduct("Repository")]
+[assembly: AssemblyProduct("RepositoryTestSuite")]
 [assembly: AssemblyCopyright("Copyright © LagDaemon Software 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("cfd59d11-ced9-43c3-a93c-ce7ae11bb847")]
+[assembly: Guid("d83f9565-3f42-4474-93fc-264cdc290893")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -34,4 +34,3 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
-//[assembly: InternalsVisibleTo("LagDaemon.WWB.RepositoryTestSuite")]

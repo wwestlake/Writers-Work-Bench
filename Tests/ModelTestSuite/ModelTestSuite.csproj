@@ -7,8 +7,8 @@
     <ProjectGuid>{00C0584B-8305-4F6A-94F3-8E67CE2E4980}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LagDaemon.WWB.TestSuite</RootNamespace>
-    <AssemblyName>LagDaemon.WWB.TestSuite</AssemblyName>
+    <RootNamespace>LagDaemon.WWB.ModelTestSuite</RootNamespace>
+    <AssemblyName>LagDaemon.WWB.ModelTestSuite</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -44,7 +44,6 @@
   <ItemGroup>
     <Compile Include="OutlineTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RepositoryTests.cs" />
     <Compile Include="StoryStructureTests.cs" />
     <Compile Include="TimeLineTests.cs" />
   </ItemGroup>
@@ -52,11 +51,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Model\Model.csproj">
+    <ProjectReference Include="..\..\Model\Model.csproj">
       <Project>{0f96d07f-5311-4fa2-9c09-0b34721c21bb}</Project>
       <Name>Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Repository\Repository.csproj">
+    <ProjectReference Include="..\..\Repository\Repository.csproj">
       <Project>{744f1473-b6d0-4f36-b039-9df6d86c8177}</Project>
       <Name>Repository</Name>
     </ProjectReference>

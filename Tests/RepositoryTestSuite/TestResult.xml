@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\Tests\RepositoryTestSuite\RepositoryTestSuite.csproj" total="1" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2014-02-13" time="10:58:12">
+  <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.5477" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.3\bin" machine-name="WWESTLAKE-HP" user="wwestlake" user-domain="wwestlake-HP" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Test Project" name="C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\Tests\RepositoryTestSuite\RepositoryTestSuite.csproj" executed="True" result="Success" success="True" time="0.865" asserts="0">
+    <results>
+      <test-suite type="Assembly" name="C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\Tests\RepositoryTestSuite\bin\Debug\LagDaemon.WWB.RepositoryTestSuite.dll" executed="True" result="Success" success="True" time="0.517" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="LagDaemon" executed="True" result="Success" success="True" time="0.497" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="WWB" executed="True" result="Success" success="True" time="0.497" asserts="0">
+                <results>
+                  <test-suite type="Namespace" name="RepositoryTestSuite" executed="True" result="Success" success="True" time="0.496" asserts="0">
+                    <results>
+                      <test-suite type="TestFixture" name="RepositoryTests" executed="True" result="Success" success="True" time="0.493" asserts="0">
+                        <results>
+                          <test-case name="LagDaemon.WWB.RepositoryTestSuite.RepositoryTests.RepositoryManager_CallsReposiory_AllProjects" executed="True" result="Success" success="True" time="0.476" asserts="0" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

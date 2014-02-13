@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="true">
+  <TopNode>[0-1000]C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\TestSuite\TestSuite.csproj</TopNode>
+  <SelectedNode>[1-1020]LagDaemon.WWB.TestSuite</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1000]C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\TestSuite\TestSuite.csproj" Expanded="true" />
+    <Node UniqueName="[1-1017]C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\TestSuite\bin\Debug\LagDaemon.WWB.TestSuite.dll" Expanded="true" />
+    <Node UniqueName="[1-1018]LagDaemon" Expanded="true" />
+    <Node UniqueName="[1-1019]LagDaemon.WWB" Expanded="true" />
+    <Node UniqueName="[1-1020]LagDaemon.WWB.TestSuite" Expanded="true" />
+    <Node UniqueName="[1-1000]LagDaemon.WWB.TestSuite.OutlineTests" Expanded="true" />
+    <Node UniqueName="[1-1003]LagDaemon.WWB.TestSuite.RepositoryTests" Expanded="true" />
+    <Node UniqueName="[1-1006]LagDaemon.WWB.TestSuite.StoryStructureTests" Expanded="true" />
+    <Node UniqueName="[1-1013]LagDaemon.WWB.TestSuite.TimeLineTests" Expanded="true" />
+  </Nodes>
+</VisualState>
