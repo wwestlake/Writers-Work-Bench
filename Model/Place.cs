@@ -2,7 +2,7 @@
  *   Writers Work Bench Copyright (C) 2014  William W. Westlake Jr.
  *   wwestlake@lagdaemon.com
  *   
- *   source code: https://github.com/wwestlake/ExperimentalOS.git 
+ *   source code: https://github.com/wwestlake/Writers-Work-Bench.git
  * 
  *   This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
