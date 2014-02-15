@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="true">
   <TopNode>[0-1000]C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\Tests\RepositoryTestSuite\RepositoryTestSuite.csproj</TopNode>
-  <SelectedNode>[1-1001]LagDaemon.WWB.RepositoryTestSuite.RepositoryTests.RepositoryManager_CallsReposiory_AllProjects</SelectedNode>
+  <SelectedNode>[0-1000]C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\Tests\RepositoryTestSuite\RepositoryTestSuite.csproj</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
     <Node UniqueName="[0-1000]C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\Tests\RepositoryTestSuite\RepositoryTestSuite.csproj" Expanded="true" />
-    <Node UniqueName="[1-1003]C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\Tests\RepositoryTestSuite\bin\Debug\LagDaemon.WWB.RepositoryTestSuite.dll" Expanded="true" />
-    <Node UniqueName="[1-1004]LagDaemon" Expanded="true" />
-    <Node UniqueName="[1-1005]LagDaemon.WWB" Expanded="true" />
-    <Node UniqueName="[1-1006]LagDaemon.WWB.RepositoryTestSuite" Expanded="true" />
-    <Node UniqueName="[1-1000]LagDaemon.WWB.RepositoryTestSuite.RepositoryTests" Expanded="true" />
+    <Node UniqueName="[1-1012]C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\Tests\RepositoryTestSuite\bin\Debug\LagDaemon.WWB.RepositoryTestSuite.dll" Expanded="true" />
+    <Node UniqueName="[1-1013]LagDaemon" Expanded="true" />
+    <Node UniqueName="[1-1014]LagDaemon.WWB" Expanded="true" />
+    <Node UniqueName="[1-1015]LagDaemon.WWB.RepositoryTestSuite" Expanded="true" />
+    <Node UniqueName="[1-1000]LagDaemon.WWB.RepositoryTestSuite.CharacterManagerTests" Expanded="true" />
+    <Node UniqueName="[1-1006]LagDaemon.WWB.RepositoryTestSuite.ProjectManagerTests" Expanded="true" />
   </Nodes>
 </VisualState>

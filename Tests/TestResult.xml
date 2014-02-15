@@ -1,31 +1,86 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\Tests\AllTests.nunit" total="23" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2014-02-13" time="19:19:08">
+<test-results name="C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\Tests\AllTests.nunit" total="38" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2014-02-15" time="00:42:32">
   <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.5477" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.3\bin" machine-name="WWESTLAKE-HP" user="wwestlake" user-domain="wwestlake-HP" />
   <culture-info current-culture="en-US" current-uiculture="en-US" />
-  <test-suite type="Test Project" name="C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\Tests\AllTests.nunit" executed="True" result="Success" success="True" time="1.364" asserts="0">
+  <test-suite type="Test Project" name="C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\Tests\AllTests.nunit" executed="True" result="Success" success="True" time="1.872" asserts="0">
     <results>
-      <test-suite type="Assembly" name="C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\Tests\ModelTestSuite\bin\Debug\LagDaemon.WWB.TestSuite.dll" executed="True" result="Success" success="True" time="0.173" asserts="0">
+      <test-suite type="Assembly" name="C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\Tests\AbstractPatternsTests\bin\Debug\LagDaemon.WWB.AbstractPatternsTests.dll" executed="True" result="Success" success="True" time="0.188" asserts="0">
         <results>
-          <test-suite type="Namespace" name="LagDaemon" executed="True" result="Success" success="True" time="0.155" asserts="0">
+          <test-suite type="Namespace" name="LagDaemon" executed="True" result="Success" success="True" time="0.170" asserts="0">
             <results>
-              <test-suite type="Namespace" name="WWB" executed="True" result="Success" success="True" time="0.154" asserts="0">
+              <test-suite type="Namespace" name="WWB" executed="True" result="Success" success="True" time="0.170" asserts="0">
                 <results>
-                  <test-suite type="Namespace" name="TestSuite" executed="True" result="Success" success="True" time="0.154" asserts="0">
+                  <test-suite type="Namespace" name="AbstractPatternsTests" executed="True" result="Success" success="True" time="0.170" asserts="0">
                     <results>
-                      <test-suite type="TestFixture" name="OutlineTests" executed="True" result="Success" success="True" time="0.078" asserts="0">
+                      <test-suite type="TestFixture" name="AbstractFactoryTests" executed="True" result="Success" success="True" time="0.077" asserts="0">
+                        <results>
+                          <test-case name="LagDaemon.WWB.AbstractPatternsTests.AbstractFactoryTests.AbstractFactory_Creates_ClassWithParametersInstance" executed="True" result="Success" success="True" time="0.036" asserts="2" />
+                          <test-case name="LagDaemon.WWB.AbstractPatternsTests.AbstractFactoryTests.AbstractFactory_Creates_ClassWithPartialPredefinedConfig" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                          <test-case name="LagDaemon.WWB.AbstractPatternsTests.AbstractFactoryTests.AbstractFactory_Creates_ClassWithPredefinedConfig" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                          <test-case name="LagDaemon.WWB.AbstractPatternsTests.AbstractFactoryTests.AbstractFactory_Creates_ParameterlessTestClassInstance" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="ChainOfResponsibilityTests" executed="True" result="Success" success="True" time="0.005" asserts="0">
+                        <results>
+                          <test-case name="LagDaemon.WWB.AbstractPatternsTests.ChainOfResponsibilityTests.ChainOfReponsibility_Process" executed="True" result="Success" success="True" time="0.003" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="MultitonTests" executed="True" result="Success" success="True" time="0.019" asserts="0">
+                        <results>
+                          <test-case name="LagDaemon.WWB.AbstractPatternsTests.MultitonTests.Multiton_Creates_ClassWithParameters_Instance" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                          <test-case name="LagDaemon.WWB.AbstractPatternsTests.MultitonTests.Multiton_Creates_ParameterlessClass_Instance" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                          <test-case name="LagDaemon.WWB.AbstractPatternsTests.MultitonTests.Multiton_Produces_Singletons_For_Type" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                          <test-case name="LagDaemon.WWB.AbstractPatternsTests.MultitonTests.Multiton_Throws_MultitonException_When_Type_added_second_Time" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="ProducerTests" executed="True" result="Success" success="True" time="0.014" asserts="0">
+                        <results>
+                          <test-case name="LagDaemon.WWB.AbstractPatternsTests.ProducerTests.ProducerBuildsClassFromRegisteredTypes" executed="True" result="Success" success="True" time="0.012" asserts="2" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="SingletonTests" executed="True" result="Success" success="True" time="0.008" asserts="0">
+                        <results>
+                          <test-case name="LagDaemon.WWB.AbstractPatternsTests.SingletonTests.Singleton_Creates_ClassWithParametersInstance_UsingCustomFactory" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                          <test-case name="LagDaemon.WWB.AbstractPatternsTests.SingletonTests.Singleton_Creates_ParameterlessClass" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="SpecificationTests" executed="True" result="Success" success="True" time="0.015" asserts="0">
+                        <results>
+                          <test-case name="LagDaemon.WWB.AbstractPatternsTests.SpecificationTests.Specification_And_Validates_TestClass" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                          <test-case name="LagDaemon.WWB.AbstractPatternsTests.SpecificationTests.Specification_Not_Validates_TestClass" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                          <test-case name="LagDaemon.WWB.AbstractPatternsTests.SpecificationTests.Specification_Or_Validates_TestClass" executed="True" result="Success" success="True" time="0.002" asserts="3" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="StrategyTests" executed="True" result="Success" success="True" time="0.007" asserts="0">
+                        <results>
+                          <test-case name="LagDaemon.WWB.AbstractPatternsTests.StrategyTests.AddStrategy_Is_Called_By_Context" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                          <test-case name="LagDaemon.WWB.AbstractPatternsTests.StrategyTests.AddStrategy_Throws_Exception" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="Assembly" name="C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\Tests\ModelTestSuite\bin\Debug\LagDaemon.WWB.ModelTestSuite.dll" executed="True" result="Success" success="True" time="0.189" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="LagDaemon" executed="True" result="Success" success="True" time="0.172" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="WWB" executed="True" result="Success" success="True" time="0.172" asserts="0">
+                <results>
+                  <test-suite type="Namespace" name="TestSuite" executed="True" result="Success" success="True" time="0.172" asserts="0">
+                    <results>
+                      <test-suite type="TestFixture" name="OutlineTests" executed="True" result="Success" success="True" time="0.075" asserts="0">
                         <results>
                           <test-case name="LagDaemon.WWB.TestSuite.OutlineTests.Outline_Produces_Dot_Notation_Entry_Numbers_Based_On_Parents" executed="True" result="Success" success="True" time="0.046" asserts="10" />
-                          <test-case name="LagDaemon.WWB.TestSuite.OutlineTests.OutlineEntry_produces_ordered_children" executed="True" result="Success" success="True" time="0.013" asserts="0" />
+                          <test-case name="LagDaemon.WWB.TestSuite.OutlineTests.OutlineEntry_produces_ordered_children" executed="True" result="Success" success="True" time="0.012" asserts="0" />
                         </results>
                       </test-suite>
-                      <test-suite type="TestFixture" name="RepositoryTests" executed="True" result="Success" success="True" time="0.018" asserts="0">
-                        <results>
-                          <test-case name="LagDaemon.WWB.TestSuite.RepositoryTests.Repository_Factory_Creates_Repository" executed="True" result="Success" success="True" time="0.010" asserts="1" />
-                          <test-case name="LagDaemon.WWB.TestSuite.RepositoryTests.Repository_Factory_Throws_Exception_When_Name_Is_Used_Second_Time" executed="True" result="Success" success="True" time="0.005" asserts="0" />
-                        </results>
-                      </test-suite>
-                      <test-suite type="TestFixture" name="StoryStructureTests" executed="True" result="Success" success="True" time="0.037" asserts="0">
+                      <test-suite type="TestFixture" name="StoryStructureTests" executed="True" result="Success" success="True" time="0.080" asserts="0">
                         <results>
                           <test-case name="LagDaemon.WWB.TestSuite.StoryStructureTests.StoryStructure_adds_story_structure_elements" executed="True" result="Success" success="True" time="0.014" asserts="1" />
                           <test-case name="LagDaemon.WWB.TestSuite.StoryStructureTests.StoryStructure_clears_story_elements" executed="True" result="Success" success="True" time="0.001" asserts="1" />
@@ -35,10 +90,10 @@
                           <test-case name="LagDaemon.WWB.TestSuite.StoryStructureTests.StoryStructureElement_removes_children" executed="True" result="Success" success="True" time="0.001" asserts="1" />
                         </results>
                       </test-suite>
-                      <test-suite type="TestFixture" name="TimeLineTests" executed="True" result="Success" success="True" time="0.009" asserts="0">
+                      <test-suite type="TestFixture" name="TimeLineTests" executed="True" result="Success" success="True" time="0.008" asserts="0">
                         <results>
                           <test-case name="LagDaemon.WWB.TestSuite.TimeLineTests.TimeLine_Adds_Entries" executed="True" result="Success" success="True" time="0.001" asserts="1" />
-                          <test-case name="LagDaemon.WWB.TestSuite.TimeLineTests.TimeLine_Clears_Entries" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                          <test-case name="LagDaemon.WWB.TestSuite.TimeLineTests.TimeLine_Clears_Entries" executed="True" result="Success" success="True" time="0.000" asserts="1" />
                           <test-case name="LagDaemon.WWB.TestSuite.TimeLineTests.TimeLine_Removess_Entries" executed="True" result="Success" success="True" time="0.001" asserts="1" />
                         </results>
                       </test-suite>
@@ -50,24 +105,24 @@
           </test-suite>
         </results>
       </test-suite>
-      <test-suite type="Assembly" name="C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\Tests\RepositoryTestSuite\bin\Debug\LagDaemon.WWB.RepositoryTestSuite.dll" executed="True" result="Success" success="True" time="0.503" asserts="0">
+      <test-suite type="Assembly" name="C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\Tests\RepositoryTestSuite\bin\Debug\LagDaemon.WWB.RepositoryTestSuite.dll" executed="True" result="Success" success="True" time="0.480" asserts="0">
         <results>
-          <test-suite type="Namespace" name="LagDaemon" executed="True" result="Success" success="True" time="0.485" asserts="0">
+          <test-suite type="Namespace" name="LagDaemon" executed="True" result="Success" success="True" time="0.462" asserts="0">
             <results>
-              <test-suite type="Namespace" name="WWB" executed="True" result="Success" success="True" time="0.485" asserts="0">
+              <test-suite type="Namespace" name="WWB" executed="True" result="Success" success="True" time="0.462" asserts="0">
                 <results>
-                  <test-suite type="Namespace" name="RepositoryTestSuite" executed="True" result="Success" success="True" time="0.485" asserts="0">
+                  <test-suite type="Namespace" name="RepositoryTestSuite" executed="True" result="Success" success="True" time="0.462" asserts="0">
                     <results>
-                      <test-suite type="TestFixture" name="CharacterManagerTests" executed="True" result="Success" success="True" time="0.446" asserts="0">
+                      <test-suite type="TestFixture" name="CharacterManagerTests" executed="True" result="Success" success="True" time="0.424" asserts="0">
                         <results>
-                          <test-case name="LagDaemon.WWB.RepositoryTestSuite.CharacterManagerTests.ItemManagerTestsBase`1._1_ItemManager_CallsRepository_AllProjects" executed="True" result="Success" success="True" time="0.398" asserts="0" />
+                          <test-case name="LagDaemon.WWB.RepositoryTestSuite.CharacterManagerTests.ItemManagerTestsBase`1._1_ItemManager_CallsRepository_AllProjects" executed="True" result="Success" success="True" time="0.378" asserts="0" />
                           <test-case name="LagDaemon.WWB.RepositoryTestSuite.CharacterManagerTests.ItemManagerTestsBase`1._2_ItemManager_CallsRepository_Save" executed="True" result="Success" success="True" time="0.011" asserts="0" />
                           <test-case name="LagDaemon.WWB.RepositoryTestSuite.CharacterManagerTests.ItemManagerTestsBase`1._3_ItemManager_CallsRepository_SaveEnumerable" executed="True" result="Success" success="True" time="0.003" asserts="0" />
                           <test-case name="LagDaemon.WWB.RepositoryTestSuite.CharacterManagerTests.ItemManagerTestsBase`1._4_ItemManager_CallsRepository_Remove" executed="True" result="Success" success="True" time="0.003" asserts="0" />
                           <test-case name="LagDaemon.WWB.RepositoryTestSuite.CharacterManagerTests.ItemManagerTestsBase`1._5_ItemManager_CallsRepository_RemoveEnumerable" executed="True" result="Success" success="True" time="0.003" asserts="0" />
                         </results>
                       </test-suite>
-                      <test-suite type="TestFixture" name="ProjectManagerTests" executed="True" result="Success" success="True" time="0.033" asserts="0">
+                      <test-suite type="TestFixture" name="ProjectManagerTests" executed="True" result="Success" success="True" time="0.032" asserts="0">
                         <results>
                           <test-case name="LagDaemon.WWB.RepositoryTestSuite.ProjectManagerTests.ItemManagerTestsBase`1._1_ItemManager_CallsRepository_AllProjects" executed="True" result="Success" success="True" time="0.016" asserts="0" />
                           <test-case name="LagDaemon.WWB.RepositoryTestSuite.ProjectManagerTests.ItemManagerTestsBase`1._2_ItemManager_CallsRepository_Save" executed="True" result="Success" success="True" time="0.001" asserts="0" />

@@ -7,8 +7,8 @@
     <ProjectGuid>{5CD807FE-F4B6-4504-A4A8-4DB27A3BBEBC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LagDaemon.WWB.Factories</RootNamespace>
-    <AssemblyName>LagDaemon.WWB.Factories</AssemblyName>
+    <RootNamespace>LagDaemon.WWB.AbstractPatterns</RootNamespace>
+    <AssemblyName>LagDaemon.WWB.AbstractPatterns</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -20,7 +20,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Debug\LagDaemon.WWB.Factories.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\LagDaemon.WWB.AbstractPatterns.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -40,7 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractFactory.cs" />
+    <Compile Include="ChainOfResponsibility.cs" />
+    <Compile Include="IMultiton.cs" />
+    <Compile Include="ISingleton.cs" />
+    <Compile Include="Multiton.cs" />
+    <Compile Include="MultitonException.cs" />
+    <Compile Include="Producer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Singleton.cs" />
+    <Compile Include="Specification.cs" />
+    <Compile Include="Strategy.cs" />
+    <Compile Include="Visitor.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

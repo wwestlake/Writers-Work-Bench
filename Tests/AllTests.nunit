@@ -1,8 +1,13 @@
 ﻿<NUnitProject>
   <Settings activeconfig="Debug" />
   <Config name="Debug" binpathtype="Auto">
-    <assembly path="ModelTestSuite\bin\Debug\LagDaemon.WWB.TestSuite.dll" />
+    <assembly path="AbstractPatternsTests\bin\Debug\LagDaemon.WWB.AbstractPatternsTests.dll" />
+    <assembly path="ModelTestSuite\bin\Debug\LagDaemon.WWB.ModelTestSuite.dll" />
     <assembly path="RepositoryTestSuite\bin\Debug\LagDaemon.WWB.RepositoryTestSuite.dll" />
   </Config>
-  <Config name="Release" binpathtype="Auto" />
+  <Config name="Release" binpathtype="Auto">
+    <assembly path="AbstractPatternsTests\bin\Release\LagDaemon.WWB.AbstractPatternsTests.dll" />
+    <assembly path="ModelTestSuite\bin\Release\LagDaemon.WWB.ModelTestSuite.dll" />
+    <assembly path="RepositoryTestSuite\bin\Release\LagDaemon.WWB.RepositoryTestSuite.dll" />
+  </Config>
 </NUnitProject>
