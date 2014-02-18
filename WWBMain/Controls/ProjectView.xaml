@@ -1,0 +1,81 @@
+﻿<UserControl x:Class="LagDaemon.WWB.WWBMain.Controls.ProjectView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:cmd="clr-namespace:LagDaemon.MVVM.Commands;assembly=LagDaemon.MVVM.CommandManagement"
+             xmlns:local="clr-namespace:LagDaemon.WWB.WWBMain"
+             xmlns:vm="clr-namespace:LagDaemon.WWB.ViewModels;assembly=LagDaemon.WWB.ViewModels"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+
+    <UserControl.CommandBindings>
+        <cmd:DataContextCommandBinding Command="vm:EditCommands.Save"  Executed="SaveProject" CanExecute="CanSaveProject" />
+        <cmd:DataContextCommandBinding Command="vm:EditCommands.Cancel" Executed="CancelEditProject" CanExecute="CanCancelEditProject" />
+        <cmd:DataContextCommandBinding Command="vm:EditCommands.Edit"  Executed="EditProject" CanExecute="CanEditProject" />
+    </UserControl.CommandBindings>
+
+
+    <Grid>
+        <ScrollViewer>
+            <ContentControl Grid.Column="2" Visibility="{Binding ProjectVisible}">
+                <ContentControl.Style>
+                    <Style TargetType="{x:Type ContentControl}">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding EditMode}" Value="False">
+                                <Setter Property="Content">
+                                    <Setter.Value>
+                                        <StackPanel>
+                                            <TextBlock Text="{Binding Project.Ident}" Visibility="{Binding Debug}" />
+                                            <TextBlock Text="{Binding Project.CreationDate}" />
+                                            <TextBlock Text="{Binding Project.Name}" />
+                                            <TextBlock Text="{Binding Project.Title}" />
+                                            <TextBlock Text="{Binding Project.Author}" />
+                                            <TextBlock Text="{Binding Project.Copyright}" />
+                                            <TextBlock Text="{Binding Project.Description}" />
+                                            <TextBlock Text="{Binding Project.Synopsis}" />
+                                            <TextBlock Text="{Binding Project.Text}" />
+                                            <StackPanel Orientation="Horizontal">
+                                                <Button Content="Edit" HorizontalAlignment="Right" Command="vm:EditCommands.Edit" />
+                                            </StackPanel>
+                                        </StackPanel>
+                                    </Setter.Value>
+                                </Setter>
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding EditMode}" Value="True">
+                                <Setter Property="Content">
+                                    <Setter.Value>
+                                        <StackPanel>
+                                            <TextBlock Text="Identifier" Visibility="{Binding Debug}"/>
+                                            <TextBlock Text="{Binding Project.Ident}" Visibility="{Binding Debug}"/>
+                                            <TextBlock Text="Creation Date" />
+                                            <TextBox Text="{Binding Project.CreationDate}" />
+                                            <TextBlock Text="Name" />
+                                            <TextBox Text="{Binding Project.Name}" />
+                                            <TextBlock Text="Title" />
+                                            <TextBox Text="{Binding Project.Title}" />
+                                            <TextBlock Text="Author" />
+                                            <TextBox Text="{Binding Project.Author}" />
+                                            <TextBlock Text="Copyright" />
+                                            <TextBox Text="{Binding Project.Copyright}" />
+                                            <TextBlock Text="Deswcription" />
+                                            <TextBox Text="{Binding Project.Description}" Height="120" />
+                                            <TextBlock Text="Synopsis" />
+                                            <TextBox Text="{Binding Project.Synopsis}" Height="120" />
+                                            <TextBlock Text="Text" />
+                                            <TextBox Text="{Binding Project.Text}" Height="120"/>
+                                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                                <Button Content="Save" Command="vm:EditCommands.Save"/>
+                                                <Button Content="Cancel Edit" Command="vm:EditCommands.Cancel"  />
+                                            </StackPanel>
+                                        </StackPanel>
+                                    </Setter.Value>
+                                </Setter>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </ContentControl.Style>
+            </ContentControl>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

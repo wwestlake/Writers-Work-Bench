@@ -49,6 +49,7 @@
     <Compile Include="SpecificationTests.cs" />
     <Compile Include="StrategyTests.cs" />
     <Compile Include="TestClasses.cs" />
+    <Compile Include="VisitorTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\AbstractPatterns\AbstractPatterns.csproj">

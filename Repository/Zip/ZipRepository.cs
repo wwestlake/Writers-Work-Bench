@@ -27,12 +27,12 @@ namespace LagDaemon.WWB.Repository.Zip
 {
     public class ZipRepository : IRepository
     {
-        public void Store<T>(T obj)
+        public bool Store<T>(T obj)
         {
             throw new NotImplementedException();
         }
 
-        public void Store<T>(IEnumerable<T> objs)
+        public int Store<T>(IEnumerable<T> objs)
         {
             throw new NotImplementedException();
         }

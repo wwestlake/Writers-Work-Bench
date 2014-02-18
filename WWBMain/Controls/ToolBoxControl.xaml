@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="LagDaemon.WWB.WWBMain.Controls.ToolBoxControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             xmlns:cmd="clr-namespace:LagDaemon.MVVM.Commands;assembly=LagDaemon.MVVM.CommandManagement"
+             xmlns:local="clr-namespace:LagDaemon.WWB.WWBMain"
+             xmlns:vm="clr-namespace:LagDaemon.WWB.ViewModels;assembly=LagDaemon.WWB.ViewModels"
+             xmlns:controls="clr-namespace:LagDaemon.WWB.WWBMain.Controls"
+             d:DesignHeight="300" d:DesignWidth="300">
+
+    <UserControl.CommandBindings>
+        <cmd:DataContextCommandBinding Command="vm:MainMenuCommands.NewProject"  Executed="NewProject" CanExecute="CanNewProject" />
+        <cmd:DataContextCommandBinding Command="vm:MainMenuCommands.OpenProject"  Executed="OpenProject" CanExecute="CanOpenProject" />
+        <cmd:DataContextCommandBinding Command="vm:MainMenuCommands.CloseProject" Executed="CloseProject" CanExecute="CanCloseProject" />
+        <cmd:DataContextCommandBinding Command="vm:MainMenuCommands.SaveProject" Executed="SaveProject" CanExecute="CanSaveProject" />
+        <cmd:DataContextCommandBinding Command="vm:MainMenuCommands.SaveProjectAs" Executed="SaveProjectAs" CanExecute="CanSaveProjectAs" />
+        <cmd:DataContextCommandBinding Command="vm:MainMenuCommands.Exit" Executed="Exit" CanExecute="CanExit" />
+    </UserControl.CommandBindings>
+    
+    <Grid>
+        <StackPanel>
+            <Button Content="New Project"  Command="vm:MainMenuCommands.NewProject" />
+            <Button Content="Open Project" Command="vm:MainMenuCommands.OpenProject" />
+            <Button Content="Close Project" Command="vm:MainMenuCommands.CloseProject" />
+            <Button Content="Save Project" Command="vm:MainMenuCommands.SaveProject" />
+            <Button Content="Save Project As" Command="vm:MainMenuCommands.SaveProjectAs" />
+            <Button Content="Exit" Command="vm:MainMenuCommands.Exit" />
+        </StackPanel>
+    </Grid>
+</UserControl>

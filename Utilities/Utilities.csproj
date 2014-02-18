@@ -31,20 +31,32 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationInfo.cs" />
     <Compile Include="ConsoleController.cs" />
-    <Compile Include="Debug.cs" />
+    <Compile Include="ObjectValidation.cs" />
+    <Compile Include="SystemResources.cs" />
+    <Compile Include="IApplicationInfo.cs" />
     <Compile Include="IConsoleController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AbstractPatterns\AbstractPatterns.csproj">
+      <Project>{5cd807fe-f4b6-4504-a4a8-4db27a3bbebc}</Project>
+      <Name>AbstractPatterns</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

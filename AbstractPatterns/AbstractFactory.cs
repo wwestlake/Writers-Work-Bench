@@ -19,44 +19,73 @@
 */
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LagDaemon.WWB.AbstractPatterns
 {
+    /// <summary>
+    /// Represents a factory
+    /// </summary>
     public interface IFactory
     {
         object Create(Type type, params object[] args);
     }
 
+    /// <summary>
+    /// Represents a generic abstract factory
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public interface IAbstractFactory<T> : IFactory
     {
         IFactory Configure(params object[] args);
         T Create(params object[] args);
     }
 
+    /// <summary>
+    /// An abstract factory that produces objects of type T
+    /// or any subclass of T
+    /// </summary>
+    /// <typeparam name="T">The type of object to produce</typeparam>
     public class AbstractFactory<T> : IAbstractFactory<T>
     {
 
         protected List<object> config = new List<object>();
         protected Type type;
 
+        /// <summary>
+        /// Constructs an abstract factory
+        /// </summary>
         public AbstractFactory() { }
 
+        /// <summary>
+        /// Constructs an abstract factory on a specific type
+        /// </summary>
+        /// <param name="type"></param>
         public AbstractFactory(Type type)
         {
             this.type = type;
         }
 
-
+        /// <summary>
+        /// Configure the abstract factory for producing
+        /// objects with a set of parameters
+        /// </summary>
+        /// <param name="args"></param>
+        /// <returns></returns>
         public IFactory Configure(params object[] args)
         {
             foreach (object obj in args) config.Add(obj);
             return this;
         }
 
+        /// <summary>
+        /// Create an object of the specified type with the 
+        /// arguments specified.  If other arguments are configured
+        /// they will be used in conjunction with the supplied arguments.
+        /// </summary>
+        /// <param name="type">The type of object to create</param>
+        /// <param name="args">The constructor arguments to use</param>
+        /// <returns>An object of the specified type</returns>
         public object Create(Type type, params object[] args)
         {
             List<object> fullArgs = new List<object>(config);
@@ -66,11 +95,21 @@ namespace LagDaemon.WWB.AbstractPatterns
             return result;
         }
 
+        /// <summary>
+        /// Creates an object of type T
+        /// </summary>
+        /// <param name="args">The constructor arguments to use</param>
+        /// <returns>An object of type T</returns>
         public T Create(params object[] args)
         {
             return (T)Create(typeof(T), args);
         }
 
+        /// <summary>
+        /// Obtains a constructor for the specied type and arguments.
+        /// </summary>
+        /// <param name="args"></param>
+        /// <returns></returns>
         private ConstructorInfo Constructor(object[] args)
         {
             Type myType;

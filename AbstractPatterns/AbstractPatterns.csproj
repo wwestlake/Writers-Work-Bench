@@ -41,11 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractFactory.cs" />
+    <Compile Include="Builder.cs" />
     <Compile Include="ChainOfResponsibility.cs" />
-    <Compile Include="IMultiton.cs" />
-    <Compile Include="ISingleton.cs" />
     <Compile Include="Multiton.cs" />
-    <Compile Include="MultitonException.cs" />
     <Compile Include="Producer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Singleton.cs" />

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using LagDaemon.WWB.AbstractPatterns;
 using LagDaemon.WWB.AbstractPatternsTests;
+using LagDaemon.WWB.Model;
 
 namespace TestConsole
 {
@@ -70,6 +71,43 @@ namespace TestConsole
     {
 
         static void Main(string[] args)
+        {
+            CharacterBuilder builder = new CharacterBuilder();
+            List<Character> list = new List<Character>
+            {
+                builder.New()
+                    .Name("Main Hero")
+                    .FirstName("Bill")
+                    .LastName("Walsh")
+                    .Age(29)
+                    .Build(),
+
+                builder.New()
+                    .Name("Enemy")
+                    .FirstName("Jack")
+                    .LastName("Kemper")
+                    .Age(56)
+                    .Build(),
+
+                builder.New()
+                    .Name("Librarian")
+                    .FirstName("Janet")
+                    .LastName("Riggs")
+                    .Age(37)
+                    .Build()
+            };
+
+            foreach (Character c in list)
+            {
+               
+                Console.WriteLine(c);
+            }
+
+
+            Console.ReadKey();
+        }
+
+        static void ProducerTests(string[] args)
         {
             Producer producer = new Producer();
             producer.RegisterType<ProducerInterface_A, ProducerClass_A>();

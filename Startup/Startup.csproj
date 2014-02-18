@@ -53,9 +53,49 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AbstractPatterns\AbstractPatterns.csproj">
+      <Project>{5cd807fe-f4b6-4504-a4a8-4db27a3bbebc}</Project>
+      <Name>AbstractPatterns</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommandManagement\CommandManagement.csproj">
+      <Project>{0477367a-1806-4d45-bbee-e6410b54ed7c}</Project>
+      <Name>CommandManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
+      <Project>{c23de271-516c-43a9-b66d-518589e4e55a}</Project>
+      <Name>Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ModelRepository\ModelRepository.csproj">
+      <Project>{a0e788ba-05ea-4811-bd16-ed652d69de33}</Project>
+      <Name>ModelRepository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{0f96d07f-5311-4fa2-9c09-0b34721c21bb}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Repository\Repository.csproj">
+      <Project>{744f1473-b6d0-4f36-b039-9df6d86c8177}</Project>
+      <Name>Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tests\AbstractPatternsTests\AbstractPatternsTests.csproj">
+      <Project>{cd987a52-5721-4556-a889-7e7343aef5dc}</Project>
+      <Name>AbstractPatternsTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tests\ModelTestSuite\ModelTests.csproj">
+      <Project>{00c0584b-8305-4f6a-94f3-8e67ce2e4980}</Project>
+      <Name>ModelTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tests\RepositoryTestSuite\RepositoryTestSuite.csproj">
+      <Project>{ea750362-3b07-4424-84bc-3c421277dd03}</Project>
+      <Name>RepositoryTestSuite</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Utilities\Utilities.csproj">
       <Project>{f34951ea-9520-4d10-8048-401e59ca4148}</Project>
       <Name>Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ViewModels\ViewModels.csproj">
+      <Project>{4000b0c2-f69b-44b3-984d-cb71ab55c3ae}</Project>
+      <Name>ViewModels</Name>
     </ProjectReference>
     <ProjectReference Include="..\WWBMain\WWBMain.csproj">
       <Project>{135b8223-1362-4f4b-86c3-c5d4e3acc465}</Project>

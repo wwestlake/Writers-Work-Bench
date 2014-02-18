@@ -38,4 +38,21 @@ namespace LagDaemon.WWB.Model
         public string Description { get; set; }
         public string Text { get; set; }
     }
+
+    public static class ModelBaseExtensions
+    {
+        public static ModelBase Description(this ModelBase mb, string description)
+        {
+            mb.Description = description;
+            return mb;
+        }
+
+        public static ModelBase Text(this ModelBase mb, string text)
+        {
+            mb.Text = text;
+            return mb;
+        }
+
+
+    }
 }

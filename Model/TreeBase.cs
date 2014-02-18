@@ -38,6 +38,7 @@ namespace LagDaemon.WWB.Model
         public void AddChild(T element)
         {
             elements.Add(element);
+            if (element.parent != null) element.Parent.Remove(element);
             element.parent = this as T;
         }
 

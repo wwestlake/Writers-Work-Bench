@@ -59,6 +59,7 @@ namespace LagDaemon.WWB.AbstractPatternsTests
             int result = context.Execute(3, 4, "This should throw an exception");
         }
 
+
         [TearDown]
         public void TearDown()
         {

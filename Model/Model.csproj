@@ -56,6 +56,12 @@
     <Compile Include="StoryStructure.cs" />
     <Compile Include="StoryStructureElement.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AbstractPatterns\AbstractPatterns.csproj">
+      <Project>{5cd807fe-f4b6-4504-a4a8-4db27a3bbebc}</Project>
+      <Name>AbstractPatterns</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

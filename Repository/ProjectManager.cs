@@ -39,14 +39,14 @@ namespace LagDaemon.WWB.Repository
             return repository.Query<Project>(allItemsPredicate);
         }
 
-        public override void Save(Project item)
+        public override bool Save(Project item)
         {
-            repository.Store<Project>(item);
+            return repository.Store<Project>(item);
         }
 
-        public override void Save(IEnumerable<Project> items)
+        public override int Save(IEnumerable<Project> items)
         {
-            repository.Store<Project>(items);
+            return repository.Store<Project>(items);
         }
 
         public override void Remove(Project item)
@@ -57,6 +57,11 @@ namespace LagDaemon.WWB.Repository
         public override void Remove(IEnumerable<Project> items)
         {
             repository.Delete<Project>(items);
+        }
+
+        public override IEnumerable<Project> Find(Predicate<Project> predicate)
+        {
+            return repository.Query<Project>(predicate);
         }
     }
 }

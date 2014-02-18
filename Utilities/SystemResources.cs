@@ -1,4 +1,5 @@
-﻿/*
+﻿using LagDaemon.WWB.AbstractPatterns;
+/*
  *   Writers Work Bench Copyright (C) 2014  William W. Westlake Jr.
  *   wwestlake@lagdaemon.com
  *   
@@ -22,20 +23,44 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace LagDaemon.WWB.Utilities
 {
-    public static class Debug
+    public static class SystemResources 
     {
-        private static IConsoleController console;
+        private static Singleton<ConsoleController> controller = new Singleton<ConsoleController>();
+        private static Singleton<ApplicationInfo> appinfo = new Singleton<ApplicationInfo>();
+        private static Window mainWindow;
 
         public static IConsoleController Console
         {
             get
             {
-                if (null == console) console = new ConsoleController();
-                return console as IConsoleController;
+                return controller.Instance;
             }
         }
+
+        public static IApplicationInfo Info
+        {
+            get 
+            {
+                return appinfo.Instance;
+            }
+        }
+
+        public static Window MainWindow
+        {
+            get
+            {
+                return mainWindow;
+            }
+            set
+            {
+                if (ObjectValidation.IsNull(mainWindow)) mainWindow = value;
+                else throw new ApplicationException("Can not change MainWindow once set.");
+            }
+        }
+
     }
 }

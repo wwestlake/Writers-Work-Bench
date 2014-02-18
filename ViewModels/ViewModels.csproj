@@ -31,16 +31,58 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EditCommands.cs" />
+    <Compile Include="HomeViewModel.cs" />
+    <Compile Include="MainMenuCommands.cs" />
+    <Compile Include="MainWindowViewModel.cs" />
+    <Compile Include="MessageWindowCommands.cs" />
+    <Compile Include="MessageWindowViewModel.cs" />
+    <Compile Include="ProjectViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModelBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AbstractPatterns\AbstractPatterns.csproj">
+      <Project>{5cd807fe-f4b6-4504-a4a8-4db27a3bbebc}</Project>
+      <Name>AbstractPatterns</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommandManagement\CommandManagement.csproj">
+      <Project>{0477367a-1806-4d45-bbee-e6410b54ed7c}</Project>
+      <Name>CommandManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
+      <Project>{c23de271-516c-43a9-b66d-518589e4e55a}</Project>
+      <Name>Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ModelRepository\ModelRepository.csproj">
+      <Project>{a0e788ba-05ea-4811-bd16-ed652d69de33}</Project>
+      <Name>ModelRepository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{0f96d07f-5311-4fa2-9c09-0b34721c21bb}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Repository\Repository.csproj">
+      <Project>{744f1473-b6d0-4f36-b039-9df6d86c8177}</Project>
+      <Name>Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{f34951ea-9520-4d10-8048-401e59ca4148}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

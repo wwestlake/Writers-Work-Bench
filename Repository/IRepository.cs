@@ -30,15 +30,17 @@ namespace LagDaemon.WWB.Repository
         /// Stores or updates an object
         /// </summary>
         /// <typeparam name="T">The type of the object to store</typeparam>
+        /// <returns>true if successful</returns>
         /// <param name="obj">The object to store</param>
-        void Store<T>(T obj);
+        bool Store<T>(T obj);
 
         /// <summary>
         /// Stores or updates an enumeratrion of objects
         /// </summary>
         /// <typeparam name="T">The type of object to store</typeparam>
         /// <param name="objs">The object to store</param>
-        void Store<T>(IEnumerable<T> objs);
+        /// <returns>number of items stored</returns>
+        int Store<T>(IEnumerable<T> objs);
 
         /// <summary>
         /// Locates objects based on the predicate

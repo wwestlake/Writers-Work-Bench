@@ -31,6 +31,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using LagDaemon.WWB.Utilities;
 
 namespace LagDaemon.WWB.WWBMain
 {
@@ -41,7 +42,15 @@ namespace LagDaemon.WWB.WWBMain
     {
         public MainWindow()
         {
-            InitializeComponent();
+            try
+            {
+                InitializeComponent();
+            }
+            catch (Exception ex)
+            {
+                SystemResources.Console.LogException(ex);
+                throw ex;
+            }
         }
     }
 }

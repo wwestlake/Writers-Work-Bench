@@ -28,11 +28,11 @@ using System.Threading.Tasks;
 
 namespace LagDaemon.WWB.Utilities
 {
-    public static class ApplicationInfo
+    internal class ApplicationInfo : IApplicationInfo
     {
-        public static Version Version { get { return Assembly.GetCallingAssembly().GetName().Version; } }
+        public Version Version { get { return Assembly.GetCallingAssembly().GetName().Version; } }
 
-        public static string Title
+        public  string Title
         {
             get
             {
@@ -46,7 +46,7 @@ namespace LagDaemon.WWB.Utilities
             }
         }
 
-        public static string ProductName
+        public string ProductName
         {
             get
             {
@@ -55,7 +55,7 @@ namespace LagDaemon.WWB.Utilities
             }
         }
 
-        public static string Description
+        public string Description
         {
             get
             {
@@ -64,7 +64,7 @@ namespace LagDaemon.WWB.Utilities
             }
         }
 
-        public static string CopyrightHolder
+        public string CopyrightHolder
         {
             get
             {
@@ -73,7 +73,7 @@ namespace LagDaemon.WWB.Utilities
             }
         }
 
-        public static string CompanyName
+        public string CompanyName
         {
             get
             {
@@ -82,7 +82,7 @@ namespace LagDaemon.WWB.Utilities
             }
         }
 
-        public static string ApplicationDataDirectory
+        public string ApplicationDataDirectory
         {
             get
             {
@@ -90,13 +90,9 @@ namespace LagDaemon.WWB.Utilities
             }
         }
 
-        public static string ApplicationLogDirectory
-        {
-            get
-            {
-                return ApplicationDataDirectory + Path.DirectorySeparatorChar + "Logs";
-            }
-        }
-
+        public string ApplicationLogDirectory { get { return ApplicationDataDirectory + Path.DirectorySeparatorChar + "Logs"; } }
+        public string ApplicationProjectDirectory { get { return ApplicationDataDirectory + Path.DirectorySeparatorChar + "Projects"; } }
+        public string ApplicationConfigurationDirectory { get { return ApplicationDataDirectory + Path.DirectorySeparatorChar + "Config"; } }
+        public string ApplicationResourcesDirectory { get { return ApplicationDataDirectory + Path.DirectorySeparatorChar + "Resources"; } }
     }
 }

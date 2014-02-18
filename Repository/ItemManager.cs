@@ -36,10 +36,11 @@ namespace LagDaemon.WWB.Repository
         }
 
         public abstract IEnumerable<T> All();
-        public abstract void Save(T item);
-        public abstract void Save(IEnumerable<T> items);
+        public abstract bool Save(T item);
+        public abstract int Save(IEnumerable<T> items);
         public abstract void Remove(T item);
         public abstract void Remove(IEnumerable<T> items);
+        public abstract IEnumerable<T> Find(Predicate<T> predicate);
 
 
         public Predicate<T> AllItemsPredicate
@@ -53,5 +54,7 @@ namespace LagDaemon.WWB.Repository
                 this.allItemsPredicate = value;
             }
         }
+
+
     }
 }

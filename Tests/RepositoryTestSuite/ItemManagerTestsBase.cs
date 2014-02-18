@@ -45,7 +45,7 @@ namespace LagDaemon.WWB.RepositoryTestSuite
         public virtual void Setup()
         {
             mocks = new MockRepository();
-            repo = mocks.DynamicMock<IRepository>();
+            repo = MockRepository.GenerateMock<IRepository>();
             RepositoryAccess.Repository = repo;
         }
 
@@ -53,70 +53,49 @@ namespace LagDaemon.WWB.RepositoryTestSuite
         [Test]
         public void _1_ItemManager_CallsRepository_AllProjects()
         {
-
-            using (mocks.Record())
-            {
-                repo.Query<T>(itemManager.AllItemsPredicate);
-            }
-
+            repo.Expect(x => x.Query<T>(itemManager.AllItemsPredicate)).Return(new List<T> { new T() });
             IEnumerable<T> result = itemManager.All();
-            mocks.Verify(repo);
+            repo.VerifyAllExpectations();
         }
 
         [Test]
         public void _2_ItemManager_CallsRepository_Save()
         {
             T item = new T();
-            using (mocks.Record())
-            {
-                repo.Store<T>(item);
-            }
-
-            itemManager.Save(item);
-            mocks.Verify(repo);
+            repo.Expect(x => x.Store(item)).Return(true);
+            bool result = itemManager.Save(item);
+            Assert.True(result);
+            repo.VerifyAllExpectations();
         }
 
 
         [Test]
         public void _3_ItemManager_CallsRepository_SaveEnumerable()
         {
-            IEnumerable<T> list = new List<T>();
-            using (mocks.Record())
-            {
-                repo.Store<T>(list);
-            }
+            IEnumerable<T> list = new List<T> { new T(), new T(), new T() };
+            repo.Expect(x => x.Store(list)).Return(list.Count());
 
             itemManager.Save(list);
-            mocks.Verify(repo);
-
+            repo.VerifyAllExpectations();
         }
 
         [Test]
         public void _4_ItemManager_CallsRepository_Remove()
         {
             T item = new T();
-            using (mocks.Record())
-            {
-                repo.Delete<T>(item);
-            }
-
+            repo.Expect(x => x.Delete(item));
             itemManager.Remove(item);
-            mocks.Verify(repo);
-
+            repo.VerifyAllExpectations();
         }
 
 
         [Test]
         public void _5_ItemManager_CallsRepository_RemoveEnumerable()
         {
-            IEnumerable<T> list = new List<T>();
-            using (mocks.Record())
-            {
-                repo.Delete<T>(list);
-            }
-
+            IEnumerable<T> list = new List<T> { new T(), new T(), new T() };
+            repo.Expect(x => x.Delete(list));
             itemManager.Remove(list);
-            mocks.Verify(repo);
+            repo.VerifyAllExpectations();
         }
 
 

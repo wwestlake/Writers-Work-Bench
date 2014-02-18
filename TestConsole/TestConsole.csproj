@@ -52,6 +52,10 @@
       <Project>{5cd807fe-f4b6-4504-a4a8-4db27a3bbebc}</Project>
       <Name>AbstractPatterns</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{0f96d07f-5311-4fa2-9c09-0b34721c21bb}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Tests\AbstractPatternsTests\AbstractPatternsTests.csproj">
       <Project>{cd987a52-5721-4556-a889-7e7343aef5dc}</Project>
       <Name>AbstractPatternsTests</Name>

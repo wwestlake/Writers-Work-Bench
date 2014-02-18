@@ -52,16 +52,16 @@ namespace LagDaemon.WWB.Utilities
         private FileStream logStream;
         private TextWriter writer;
         
-        internal ConsoleController() 
+        public ConsoleController() 
         {
             logFileName = DateTime.Now.ToLongDateString().Replace("\\", "-") + ".log";
             IsVisible = true;
             DeleteMenu(GetSystemMenu(GetConsoleWindow(), false), SC_CLOSE, MF_BYCOMMAND);
-            if (!Directory.Exists(ApplicationInfo.ApplicationLogDirectory))
+            if (!Directory.Exists(SystemResources.Info.ApplicationLogDirectory))
             {
-                Directory.CreateDirectory(ApplicationInfo.ApplicationLogDirectory);
+                Directory.CreateDirectory(SystemResources.Info.ApplicationLogDirectory);
             }
-            currentLogFile = ApplicationInfo.ApplicationLogDirectory + Path.DirectorySeparatorChar + logFileName;
+            currentLogFile = SystemResources.Info.ApplicationLogDirectory + Path.DirectorySeparatorChar + logFileName;
             logStream = new FileStream(currentLogFile, FileMode.Append | FileMode.OpenOrCreate, FileAccess.Write);
             writer = new StreamWriter(logStream);
             WriteLine(currentLogFile);

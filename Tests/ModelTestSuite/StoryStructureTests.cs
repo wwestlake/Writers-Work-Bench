@@ -25,7 +25,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LagDaemon.WWB.TestSuite
+namespace LagDaemon.WWB.ModelTests
 {
 #if DEBUG
 

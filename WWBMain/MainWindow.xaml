@@ -1,8 +1,29 @@
 ﻿<Window x:Class="LagDaemon.WWB.WWBMain.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        xmlns:cmd="clr-namespace:LagDaemon.MVVM.Commands;assembly=LagDaemon.MVVM.CommandManagement"
+        xmlns:local="clr-namespace:LagDaemon.WWB.WWBMain"
+        xmlns:vm="clr-namespace:LagDaemon.WWB.ViewModels;assembly=LagDaemon.WWB.ViewModels"
+        xmlns:controls="clr-namespace:LagDaemon.WWB.WWBMain.Controls"
+        Title="MainWindow" Height="700" Width="900">
+
+    <Window.Resources>
+        <ResourceDictionary Source="MergedDictionaries.xaml" />
+    </Window.Resources>
+    
+    <Grid Background="{StaticResource formBackground}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Text="{StaticResource applicationTitle}" FontSize="{StaticResource applicationTitleFontSize}" Foreground="{StaticResource applicationTitleForeground}" />
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <controls:ToolBoxControl Grid.Column="0" />
+            <controls:MainTabControl Grid.Column="1" />
+        </Grid>
+   </Grid>
 </Window>

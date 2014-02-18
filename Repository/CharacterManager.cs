@@ -40,14 +40,14 @@ namespace LagDaemon.WWB.Repository
             return repository.Query<Character>(allItemsPredicate);
         }
 
-        public override void Save(Character item)
+        public override bool Save(Character item)
         {
-            repository.Store<Character>(item);
+            return repository.Store<Character>(item);
         }
 
-        public override void Save(IEnumerable<Character> items)
+        public override int Save(IEnumerable<Character> items)
         {
-            repository.Store<Character>(items);
+            return repository.Store<Character>(items);
         }
 
         public override void Remove(Character item)
@@ -58,6 +58,11 @@ namespace LagDaemon.WWB.Repository
         public override void Remove(IEnumerable<Character> items)
         {
             repository.Delete<Character>(items);
+        }
+
+        public override IEnumerable<Character> Find(Predicate<Character> predicate)
+        {
+            return repository.Query<Character>(predicate);
         }
     }
 }

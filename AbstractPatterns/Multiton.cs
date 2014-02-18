@@ -23,6 +23,13 @@ using System.Collections.Generic;
 
 namespace LagDaemon.WWB.AbstractPatterns
 {
+    public interface IMultiton
+    {
+        void Add(Type type);
+        void Configure<T>(params object[] args);
+        T Instance<T>();
+    }
+
     public class Multiton : IMultiton
     {
         protected Dictionary<Type, IAbstractFactory<object> > factories = new Dictionary<Type, IAbstractFactory<object>>();
@@ -59,4 +66,11 @@ namespace LagDaemon.WWB.AbstractPatterns
         }
 
     }
+
+    public class MultitonException : ApplicationException
+    {
+        public MultitonException(string message) : base(message) { }
+        public MultitonException(string format, params object[] args) : base(string.Format(format, args)) { }
+    }
+
 }

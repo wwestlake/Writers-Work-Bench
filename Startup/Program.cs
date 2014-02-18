@@ -25,49 +25,85 @@ using System.Threading.Tasks;
 using System.Windows;
 using LagDaemon.WWB.WWBMain;
 using LagDaemon.WWB.Utilities;
+using LagDaemon.WWB.ViewModels;
+using LagDaemon.WWB.WWBMain;
 
 namespace Startup
 {
     class Program : Application
     {
         static Program app;
+        static MainWindowViewModel vm;
+        static MessageWindowViewModel messageVM;
+        static MessageWindow messageWindow;
 
         [STAThread]
         static void Main(string[] args)
         {
-#if DEBUG
             ProductStamp();
-#else
-            Debug.Console.HideConsole();
-#endif
             app = new Program();
+            vm = new MainWindowViewModel();
             MainWindow window = new MainWindow();
+            SystemResources.MainWindow = window;
+            window.DataContext = vm;
             window.Closing += window_Closing;
             app.Run(window);
         }
 
         static void window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            e.Cancel = MessageBox.Show("Are you sure you want to close?", "Application Closing", MessageBoxButton.YesNo) == MessageBoxResult.No;
-            if (! e.Cancel) Debug.Console.LogEntry("Application Shutdown!");
+            if (!vm.CanCloseApplication())
+            {
+                e.Cancel = true;
+                ShowMessage("Not all data base been saved.  Do you want to save?");
+                //MessageBoxResult result = MessageBox.Show("Not all data has been saved.\nDo you want to save?", "Application Closing", MessageBoxButton.YesNoCancel);
+                MessageWindowResults result = messageVM.Result;
+                if (result == MessageWindowResults.Yes)
+                {
+                    vm.SaveProject();
+                    e.Cancel = false;
+                }
+                else if (result == MessageWindowResults.No)
+                {
+                    e.Cancel = false;
+                }
+                
+                if (!e.Cancel) SystemResources.Console.LogEntry("Application Shutdown!");
+            }
         }
 
 
+        static void ShowMessage(string message)
+        {
+            messageWindow = new MessageWindow();
+            messageVM = new MessageWindowViewModel(messageWindow, message);
+            messageVM.OkVisibility = Visibility.Collapsed;
+            messageWindow.DataContext = messageVM;
+            messageWindow.ShowDialog();
+        }
+
         static void ProductStamp()
         {
-            string product = ApplicationInfo.ProductName;
-            string company = ApplicationInfo.CompanyName;
-            string version = ApplicationInfo.Version.ToString();
-            string copyright = ApplicationInfo.CopyrightHolder;
+#if DEBUG
 
-            Debug.Console.WriteLine("{0} Version {1}", product, version);
-            Debug.Console.WriteLine("{0}", copyright);
-            Debug.Console.WriteLine("All Rights Reserved");
-            Debug.Console.WriteLine();
-            Debug.Console.WriteLine("Debug console active.  This console may be turned off in user preferences.");
-            Debug.Console.WriteLine("--------------------------------------------------------------------------");
-            Debug.Console.WriteLine();
-            Debug.Console.LogEntry("Application Startup");
+            string product = SystemResources.Info.ProductName;
+            string company = SystemResources.Info.CompanyName;
+            string version = SystemResources.Info.Version.ToString();
+            string copyright = SystemResources.Info.CopyrightHolder;
+
+            SystemResources.Console.WriteLine("{0} Version {1}", product, version);
+            SystemResources.Console.WriteLine("{0}", copyright);
+            SystemResources.Console.WriteLine("All Rights Reserved");
+            SystemResources.Console.WriteLine();
+            SystemResources.Console.WriteLine("Debug console active.  This console may be turned off in user preferences.");
+            SystemResources.Console.WriteLine("--------------------------------------------------------------------------");
+            SystemResources.Console.WriteLine();
+            SystemResources.Console.LogEntry("Application Startup");
+
+#else
+            SystemResources.Console.HideConsole();
+
+#endif
         }
 
     }

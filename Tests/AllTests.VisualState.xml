@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="true">
-  <TopNode>[0-1000]C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\Tests\AllTests.nunit</TopNode>
+  <TopNode>[1-1001]LagDaemon.WWB.AbstractPatternsTests.AbstractFactoryTests.AbstractFactory_Creates_ParameterlessTestClassInstance</TopNode>
   <SelectedNode>[0-1000]C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\Tests\AllTests.nunit</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
     <Node UniqueName="[0-1000]C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\Tests\AllTests.nunit" Expanded="true" />
-    <Node UniqueName="[1-1024]C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\Tests\AbstractPatternsTests\bin\Debug\LagDaemon.WWB.AbstractPatternsTests.dll" Expanded="true" />
-    <Node UniqueName="[1-1025]LagDaemon" Expanded="true" />
-    <Node UniqueName="[1-1026]LagDaemon.WWB" Expanded="true" />
-    <Node UniqueName="[1-1027]LagDaemon.WWB.AbstractPatternsTests" Expanded="true" />
+    <Node UniqueName="[1-1026]C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\Tests\AbstractPatternsTests\bin\Debug\LagDaemon.WWB.AbstractPatternsTests.dll" Expanded="true" />
+    <Node UniqueName="[1-1027]LagDaemon" Expanded="true" />
+    <Node UniqueName="[1-1028]LagDaemon.WWB" Expanded="true" />
+    <Node UniqueName="[1-1029]LagDaemon.WWB.AbstractPatternsTests" Expanded="true" />
     <Node UniqueName="[1-1000]LagDaemon.WWB.AbstractPatternsTests.AbstractFactoryTests" Expanded="true" />
     <Node UniqueName="[1-1005]LagDaemon.WWB.AbstractPatternsTests.ChainOfResponsibilityTests" Expanded="true" />
     <Node UniqueName="[1-1007]LagDaemon.WWB.AbstractPatternsTests.MultitonTests" Expanded="true" />
@@ -16,18 +16,22 @@
     <Node UniqueName="[1-1014]LagDaemon.WWB.AbstractPatternsTests.SingletonTests" Expanded="true" />
     <Node UniqueName="[1-1017]LagDaemon.WWB.AbstractPatternsTests.SpecificationTests" Expanded="true" />
     <Node UniqueName="[1-1021]LagDaemon.WWB.AbstractPatternsTests.StrategyTests" Expanded="true" />
-    <Node UniqueName="[1-1014]C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\Tests\ModelTestSuite\bin\Debug\LagDaemon.WWB.ModelTestSuite.dll" Expanded="true" />
-    <Node UniqueName="[1-1015]LagDaemon" Expanded="true" />
-    <Node UniqueName="[1-1016]LagDaemon.WWB" Expanded="true" />
-    <Node UniqueName="[1-1017]LagDaemon.WWB.TestSuite" Expanded="true" />
-    <Node UniqueName="[1-1000]LagDaemon.WWB.TestSuite.OutlineTests" Expanded="true" />
-    <Node UniqueName="[1-1003]LagDaemon.WWB.TestSuite.StoryStructureTests" Expanded="true" />
-    <Node UniqueName="[1-1010]LagDaemon.WWB.TestSuite.TimeLineTests" Expanded="true" />
+    <Node UniqueName="[1-1024]LagDaemon.WWB.AbstractPatternsTests.VisitorTests" Expanded="true" />
+    <Node UniqueName="[1-1024]C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\Tests\ModelTestSuite\bin\Debug\LagDaemon.WWB.ModelTests.dll" Expanded="true" />
+    <Node UniqueName="[1-1025]LagDaemon" Expanded="true" />
+    <Node UniqueName="[1-1026]LagDaemon.WWB" Expanded="true" />
+    <Node UniqueName="[1-1027]LagDaemon.WWB.ModelTests" Expanded="true" />
+    <Node UniqueName="[1-1000]LagDaemon.WWB.ModelTests.CharacterTests" Expanded="true" />
+    <Node UniqueName="[1-1008]LagDaemon.WWB.ModelTests.ProjectTests" Expanded="true" />
     <Node UniqueName="[1-1012]C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\Tests\RepositoryTestSuite\bin\Debug\LagDaemon.WWB.RepositoryTestSuite.dll" Expanded="true" />
     <Node UniqueName="[1-1013]LagDaemon" Expanded="true" />
     <Node UniqueName="[1-1014]LagDaemon.WWB" Expanded="true" />
     <Node UniqueName="[1-1015]LagDaemon.WWB.RepositoryTestSuite" Expanded="true" />
     <Node UniqueName="[1-1000]LagDaemon.WWB.RepositoryTestSuite.CharacterManagerTests" Expanded="true" />
     <Node UniqueName="[1-1006]LagDaemon.WWB.RepositoryTestSuite.ProjectManagerTests" Expanded="true" />
+    <Node UniqueName="[1-1002]C:\Users\wwestlake\Documents\Visual Studio 2013\Projects\WritersWorkBench\ViewModelTests\bin\Debug\LagDaemon.WWB.ViewModelTests.dll" Expanded="true" />
+    <Node UniqueName="[1-1003]LagDaemon" Expanded="true" />
+    <Node UniqueName="[1-1004]LagDaemon.WWB" Expanded="true" />
+    <Node UniqueName="[1-1005]LagDaemon.WWB.ViewModelTests" Expanded="true" />
   </Nodes>
 </VisualState>

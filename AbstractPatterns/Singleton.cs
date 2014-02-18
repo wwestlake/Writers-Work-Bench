@@ -25,6 +25,13 @@ using System.Threading.Tasks;
 
 namespace LagDaemon.WWB.AbstractPatterns
 {
+    public interface ISingleton<T>
+    {
+        T Instance { get; }
+        IAbstractFactory<T> Factory { set; }
+
+    }
+
     public class Singleton<T> : ISingleton<T> 
     {
         private static T instance = default(T);
